@@ -1,0 +1,75 @@
+.program-detail {
+  background-image: url('/src/assets/images/program-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program-text {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.program-text h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.program-text h3 {
+  color: var(--color-secondary);
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.program-image img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: var(--shadow-md);
+}
+
+.requirements-section h3 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-secondary);
+}
+
+.requirements-section ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.requirements-section li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+.requirements-section li::before {
+  content: "✓";
+  color: var(--color-accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.schedule {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .program-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .program-detail {
+    background-image: none;
+  }
+}

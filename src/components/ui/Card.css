@@ -1,0 +1,33 @@
+.card {
+  background: white;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.card-default {
+  box-shadow: var(--shadow-sm);
+}
+
+.card-default:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-elevated {
+  box-shadow: var(--shadow-md);
+}
+
+.card-elevated:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-outlined {
+  border: 1px solid #eee;
+  box-shadow: none;
+}
+
+.card-outlined:hover {
+  border-color: var(--color-secondary);
+}

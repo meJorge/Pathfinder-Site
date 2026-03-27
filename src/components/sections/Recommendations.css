@@ -1,0 +1,23 @@
+.recommendations {
+  background-image: url('/src/assets/images/recommendations-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.recommendations-title {
+  color: var(--color-light);
+  margin-bottom: var(--spacing-xl);
+}
+
+.job-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .recommendations {
+    background-size: contain;
+    background-position: center;
+  }
+}
